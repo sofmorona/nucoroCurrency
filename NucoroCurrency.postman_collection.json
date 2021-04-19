@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "903cd677-97f9-4088-b87b-040348a6cf0f",
+		"name": "NucoroCurrency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[GET] Currency Rates in an specific period",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/currencyRates?source_currency=EUR&date_from=2021-04-01&date_to=2021-05-01",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"currencyRates"
+					],
+					"query": [
+						{
+							"key": "source_currency",
+							"value": "EUR"
+						},
+						{
+							"key": "date_from",
+							"value": "2021-04-01"
+						},
+						{
+							"key": "date_to",
+							"value": "2021-05-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] Calculate (latest) amount in a currency exchanged into a different currency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/currencyExchange?source_currency=EUR&amount=20.8&exchanged_currency=CHF",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"currencyExchange"
+					],
+					"query": [
+						{
+							"key": "source_currency",
+							"value": "EUR"
+						},
+						{
+							"key": "amount",
+							"value": "20.8"
+						},
+						{
+							"key": "exchanged_currency",
+							"value": "CHF"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] Retrieve time-weighted rate of return for any given amount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/timeWeightedRate?source_currency=EUR&amount=20.8&exchanged_currency=CHF&start_date=2021-01-01",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"timeWeightedRate"
+					],
+					"query": [
+						{
+							"key": "source_currency",
+							"value": "EUR"
+						},
+						{
+							"key": "amount",
+							"value": "20.8"
+						},
+						{
+							"key": "exchanged_currency",
+							"value": "CHF"
+						},
+						{
+							"key": "start_date",
+							"value": "2021-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

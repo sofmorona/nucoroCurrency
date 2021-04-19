@@ -1,0 +1,38 @@
+[
+    {
+        "model": "currencyRates.Currency",
+        "fields": {
+            "name": "Euro",
+            "code": "EUR",
+            "symbol": "€"
+        },
+        "pk": 1
+    },
+    {
+        "model": "currencyRates.Currency",
+        "fields": {
+            "name": "Swiss Franc",
+            "code": "CHF",
+            "symbol": "CHF"
+        },
+        "pk": 2
+    },
+    {
+        "model": "currencyRates.Currency",
+        "fields": {
+            "name": "US Dollar",
+            "code": "USD",
+            "symbol": "$"
+        },
+        "pk": 3
+    },
+    {
+        "model": "currencyRates.Currency",
+        "fields": {
+            "name": "British Pound",
+            "code": "GBP",
+            "symbol": "£"
+        },
+        "pk": 4
+    }
+]
